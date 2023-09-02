@@ -1,0 +1,210 @@
+@media only screen and (max-width:1170px){
+    /*O me*/
+    .me .justify{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width:1150px){
+
+
+       /* galerie */
+       .photo-segment {
+        margin-left: 10px;
+        margin-right: 10px;
+    
+    }
+}
+
+@media only screen and (max-width:970px){
+     /*kontakt*/
+     .text-info:nth-child(1){
+        margin-top: 20px;
+     }
+     .text-info:nth-child(1) p {
+        padding-top: 10px;
+    }
+    
+    .text-info:nth-child(3){
+        margin-top: 20px;
+     }
+     .text-info:nth-child(3) p {
+        padding-top: 10px;
+    }
+    
+}
+
+@media only screen and (max-width:860px){
+      /*mobilni menu*/
+      nav ul li{
+        display: block;
+    }
+    nav ul li a:link,
+    nav ul li a:visited{
+        border-bottom: none;
+    }
+    nav ul li a:hover,
+    nav ul li a:active{
+        border-bottom: none;
+    }
+   
+    .mobile-nav-back{
+        height: 190px;
+        width: 100%;
+        position: fixed;
+        background-color: rgba(0,0,0,0.9);
+        border-bottom: 2px solid #fff;
+        display: none;
+        z-index: 100;
+    }
+    .mobile-nav-icon{
+        display: inline-block;
+        z-index: 200;
+        position:fixed;
+        right: 1%;
+    }
+    nav ul{
+        display: none;
+        z-index: 200;
+    }
+
+    /*kontakt*/
+    .contact .span-1-of-2{
+        width:96%;
+        margin-left:2%;
+        margin-right:2%;
+    }
+    .info img{
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%;
+        }
+
+      .text-info:nth-child(1){
+        margin-top: 20px;
+     }
+     .text-info:nth-child(1) p {
+        padding-top: 23px;
+    }
+    .text-info:nth-child(3){
+        margin-top: 20px;
+     }
+     .text-info:nth-child(3) p {
+        padding-top: 20px;
+    }
+
+    /* galerie*/
+    .photo-segment .col{
+        width: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+}
+@media only screen and (max-width:680px){
+     /*hlavička*/
+    header{
+        height: 100vh;
+        background-image: linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/nehty2mobil.jpg);
+    }
+    .header-text h1{
+        text-align: center;
+    }  
+    .header-text{
+        transform:translate(0,0);
+        top: 30%;
+        width: 100%;
+        left: 0;
+    }
+    .btn{
+        margin-left: 2%;
+        margin-right: 2%;
+        display: block;
+        text-align:center;
+        padding: 10px 10px;
+    }
+    .btn-full{
+        margin-top: 100px;
+    }
+    .btn-empty:link,
+    .btn-empty:visited{
+        margin-left:2%;
+    }
+
+
+/*galerie*/
+    .photo-segment .col{
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .photo-segment li{
+        margin-bottom: 2%;
+    }
+    .photo-segment img{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    /*ceník*/   
+    .prices{
+        height: 120vh;
+        background-image: linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/nehty2mobil.jpg);
+    }
+    .price-table{
+         width: 95%;
+    }
+    .price-table table{
+        width: 80%;
+    }
+}    
+   
+@media only screen and (max-width:550px){
+    .photo-segment .col{
+        width: 98%;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+}
+
+@media only screen and (max-width:500px){
+    /*ceník*/
+    .price-table{
+        width: 95%;
+   }
+   .price-table table{
+       width: 95%;
+   }
+    
+    /*kontakt*/ 
+    .text-info:nth-child(1) p {
+        padding-top: 10px;
+    }
+    .contact-form.row p {
+        margin-left: 1px;
+        margin-right: 1px;
+    }        
+}
+
+@media only screen and (max-width:400px){
+    
+    /*kontakt*/ 
+    .contact .span-1-of-2{
+            width:98%;
+            margin-left:1%;
+            margin-right:1%;
+        }
+    .ikona{
+        width: 42px;
+        margin:2px;
+    }
+    .text-info:nth-child(1) p {
+        padding-top: 10px;
+    }
+    .contact-form.row p {
+        margin-left: 1px;
+        margin-right: 1px;
+    }        
+}

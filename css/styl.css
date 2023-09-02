@@ -1,0 +1,419 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: ImperialScript;
+    src: url(../fonty/Imperial_Script/ImperialScript-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: DancingScript;
+    src: url(../fonty/Dancing_Script/DancingScript-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: PinyonScript;
+    src: url(../fonty/Pinyon_Script/PinyonScript-Regular.ttf);
+    font-weight: normal;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.heading-main h2{
+    text-align: center;
+    font-family: 'DancingScript';
+    font-size: 25px;
+    margin: 15px;
+}
+.heading-main h2:after{
+    content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 2px solid #4ccacc;
+    margin: 0 auto;
+}
+.heading-main h3{
+    font-family: 'DancingScript';
+    font-size: 20px;
+    text-shadow: 3px 3px 7px #327071;
+    margin: 5px;
+
+}
+.justify{
+    text-align: justify;
+}
+.ikona{
+    height: 42px;
+    width: 42px;
+    float: left;
+    margin-right: 15px;
+}
+
+
+/*  Hlavička  */
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/nehty2.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.nav-background{
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    position: fixed;
+    z-index: 50;
+    border-bottom: 2px solid #fff;
+}
+nav ul{
+    list-style: none;
+    float: right;
+    margin-top: 7px;
+    margin-right: 20px;
+    margin-left: 40%;
+    position: fixed;
+    z-index: 100;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 25px;
+}
+nav ul li a:link,
+nav ul li a:visited{
+    text-decoration: none;
+    color:#fff;
+    font-size: 25px;
+    border-bottom: 3px solid transparent;
+}
+nav ul li a:hover,
+nav ul li a:active{
+    border-bottom:#4ccacc 3px solid;
+    transition: border-bottom 0.5s;
+}
+
+.header-text{
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+}
+.header-text h1{
+    color:#fff;
+    font-size: 60px;
+    font-family: 'PinyonScript';
+    font-weight: normal;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+}
+
+.btn{
+    display: inline-block;
+    color:#fff;
+    font-size: 20px;
+    text-decoration: none;
+    border: 1px solid #4ccacc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background: #327071;
+}
+.btn-full:hover,
+.btn-full:active{
+    transition: background 1.5s;
+    background: #235d5e;
+    border: 1px solid #235d5e;
+    color:#fff;
+}
+.btn-empty:link,
+.btn-empty:visited{
+    margin-left: 5px;
+    background: transparent;
+}
+.btn-empty:hover,
+.btn-empty:active{
+    transition: background 1.5s;
+    background: #235d5e;
+    border: 1px solid #235d5e;
+    color: #fff
+}
+
+/*mobilni menu*/
+.mobile-nav-icon{
+    float: right;
+    margin-top: 1.5px;
+    display: none;
+}
+
+/*  O mě */
+.me a{
+    color:#fff;
+    background-color: #4ccacc;
+    font-size: 1.2em;
+    text-decoration: none;
+    border: 1px solid #327071;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+.me a:hover{
+    transition: background 1.5s;
+    background: #235d5e;
+    border: 1px solid #235d5e;
+    color:#fff;
+}
+.me p{
+    margin-top: 5px;
+}
+/*  Aktuality  */
+.datum{
+    text-align: right;
+}
+.note{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.note-text{
+    text-align: justify;
+}
+
+.note:after{
+    margin-top: 15px;
+    content:"";
+    border-bottom:1px solid #4ccacc;
+    width: 100%;
+    display:block;
+}
+
+/*  Ceník  */
+.prices{
+    background-image: linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/nehty2.jpg);
+    background-size: cover;
+    height: 100vh;
+    margin-top: 15px;
+    background-attachment: fixed;
+}
+.prices h2{
+    text-align: center;
+    font-family: 'DancingScript';
+    font-size: 25px;
+    margin: 5px 5px 35px 5px;
+    color: #fff;
+}
+.prices h2:after{
+    content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 2px solid #4ccacc;
+    margin: 0 auto;
+}
+.prices h3{
+    color: #fff;
+    margin:20px auto;
+}
+.prices h3:after{
+    content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 2px solid #4ccacc;
+    margin: 2px -10px;
+}
+.price-table{
+     width: 600px;
+     margin: 0 auto;
+}
+.price-table table{
+    width: 500px;
+
+}
+.table-item{
+    color:#fff;
+    font-size:20px;
+    margin-left: 60px;
+    padding-top: 10px;
+    padding-left:10px;
+}
+.table-price{
+    color:#fff;
+    font-size:20px;
+    margin-left: 60px;
+    padding-top: 10px;
+    text-align: right;
+}
+.platnost{
+    margin-top: 50px;
+    margin-right: 5px;
+    color: #fff;
+    text-align: right;
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+}
+/* .platnost:after{
+    margin-top: 15px;
+    content:"";
+    border-bottom:1px solid #4ccacc;
+    width: 100%;
+    display:block;
+}*/
+
+/*  Galerie */
+.photo-segment li{
+    overflow: hidden;
+    height: 300px;
+    background-color: #000;
+    list-style-type: none;
+}
+
+.photo-segment img{
+    width:100%;
+    height: 300px;
+    opacity: 0.5;
+    transform: scale(1.15);
+}
+.photo-segment img:hover{
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s, transform 1s;
+}
+
+
+/*  Kontakt  */
+.text-info{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.map img{
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 4px 6px 10px #235d5e;
+}
+.text-info div{
+    float: left;
+    padding: 12px;
+}
+.info p{
+    margin-left: 50px;
+    font-size: 20px;
+    padding: 23px;
+}
+.info a{
+    text-decoration: none;
+}
+
+/*   Contact form   */
+.contact-form{
+    max-width: 700px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-form input{
+    width: 80%;
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #235d5e;
+    border-radius: 5px;
+    font-family: arial;
+}
+.contact-form textarea{
+    width: 80%;
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #235d5e;
+    border-radius: 5px;
+    font-family:arial;
+}
+input[type="submit"]{
+    width: 40%;
+    text-align: center;
+    color:#fff;
+    font-size: 20px;
+    background-color: #235d5e;
+    border: 1px solid #4ccacc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+input[type="submit"]:hover{
+    background: #4ccacc;
+    transition: background-color 1s, border 1s;
+}
+
+/* form result*/
+.form-result{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.success{
+    background-color: #4ccacc;
+}
+
+.error{
+    background-color: #f31111;
+}
+/*   Footer   */
+footer{
+    background-color: #235d5e;
+    margin: 30px 0 0 0;
+   
+}.footer-social{
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+}
+.footer-social a:link,
+.footer-social a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-social a:active,
+.footer-social a:hover{
+    color:#000;
+}
+.footer-text{
+    color:#fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Lightbox galerie*/
+
+.gallery{
+    background-image: linear-gradient(rgba(255, 255, 255,0.5),rgba(255, 255, 255,0.5)), url(images/nehty2.jpg);
+    background-size: cover;
+    height: 90vh;
+}
+
+
+
+
+
+
+/*************Stop floating*************/
+.clearfix{zoom: 1}
+.clearfix:after {
+    content:".";
+    clear: both;
+    display: block;
+    height: 0; 
+    visibility: hidden;
+}
